@@ -1,14 +1,13 @@
 import express from 'express'
 
-import { getAllMessages } from '../controllers/MessagesController.js'
+import { AddMessage, deleteMessage, getAllMessages, getMessageById, updateMessage } from '../controllers/MessagesController.js'
 
 const router = express.Router()
 
 router.get('/', getAllMessages)
-
-// router.get('/:id', getBlog)
-// router.post('/', createBlog)
-// router.put('/:id', updateBlog)
-// router.delete('/:id', deleteBlog)
+router.get('/:id', getMessageById)
+router.post('/', AddMessage)
+router.put('/:id', updateMessage)
+router.delete('/:id', deleteMessage)
 
 export default router

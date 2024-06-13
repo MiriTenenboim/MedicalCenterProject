@@ -3,7 +3,6 @@ import cors from 'cors'
 // importamos la conexión a la DB
 import db from "./database/db.js"
 // importamos nuestro enrutador
-// import blogRoutes from "./routes/routes.js"
 import HMOsRoutes from "./routes/HMOsRoutes.js"
 import MessagesRoutes from "./routes/MessagesRoutes.js"
 
